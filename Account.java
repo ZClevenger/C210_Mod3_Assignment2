@@ -6,10 +6,11 @@ import java.text.*;
 // exercise 9.7
 // requirements:
 // write an Account class
+// making changes directly to file
 			// private int data field named id, default 0
 			// private double data field named balance, default 0
 			// private double data named annualInterestRate, default 0
-				// assume all accounts have the same rate
+			// assume all accounts have the same rate
 			// private Date data field name dateCreated
 			// a no-arg constructor that creates default object
 			// a constructor that creates an object with specified id and balance
@@ -20,11 +21,15 @@ import java.text.*;
 			// method named withdraw that subtracts a specified amount from the balance
 			// method named deposit that adds a specified amount to the balance
 
+
 public class Account {
    
 	// created this final variable so that the initial date is finalized
 	//private Date today = new Date(); don't need -- use datecreated as below
 	// required data field, default is 0
+
+// required data field, default is 0
+
 	private int id; 
 	// required data field, default is 0
 	private double balance; 
@@ -34,13 +39,15 @@ public class Account {
 	private Date dateCreated = new Date(); 
 
         
-        // required constructor that accepts specified data field values
-        	// required no-args constructor 
-	public AccountAmberEdit() { 
+
+        
+        // required no-args constructor 
+	public Account() { 
 
 	}
-        
-	public AccountAmberEdit(int newId, double startingBal) { 
+        // required constructor that accepts specified data field values
+	public Account(int newId, double startingBal) { 
+
 		this.id = newId;
 		this.balance = startingBal;
 		
