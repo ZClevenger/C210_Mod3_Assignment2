@@ -8,7 +8,7 @@ import java.text.*;
  * Zachary Clevenger
  * Amber Ferrebee
  * Angela Johnson
- * Bethanie Munrkes
+ * Bethanie Munkres
  */
 public class UserAccounts {
 	// class defines an array of 8 accounts as an instance variable
