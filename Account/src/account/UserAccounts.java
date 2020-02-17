@@ -9,7 +9,7 @@ import java.util.*;
  * Zachary Clevenger
  * Amber Ferrebee
  * Angela Johnson
- * Bethanie Munrkes
+ * Bethanie Munkres
  */
 public class UserAccounts {
 	
