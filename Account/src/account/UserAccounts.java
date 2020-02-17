@@ -43,26 +43,26 @@ public class UserAccounts {
 			System.out.println("Please enter an existing account id: ");
 			userInputId = input.nextInt();			
 		}
-		// Create scanner for first set of menu options
-		Scanner firstMenu = new Scanner(System.in);
+		// Create scanner for menu options
+		Scanner menuChoice = new Scanner(System.in);
 		System.out.println("Main menu");
 		System.out.println("1: check balance");
 		System.out.println("2: withdraw");
-		System.out.println("3: ");
-		System.out.println("");
-
-		if (userInputId == 1) {
+		System.out.println("3: deposit");
+		System.out.println("4: exit");
+		int choice = menuChoice.nextInt();
+		if (choice == 1) {
 			double giveBalance = userAccountsArray[userInputId].getBal();
 			System.out.println(giveBalance);
-		} else if (userInputId == 2) {
+		} else if (choice == 2) {
 					
-			} else if (userInputId == 3) {
+			} else if (choice == 3) {
 					
 				// Option 4 exits the main menu
 				// So,  if option 4 is chosen, the system will prompt the user again to enter 
 				// another id.
 				// The system will keep running indefinitely
-			} else if (userInputId == 4) {
+			} else if (choice == 4) {
 				
 			}
 		
