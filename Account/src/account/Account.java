@@ -34,7 +34,8 @@ public class Account {
         
         // required no-args constructor 
 	public Account() { 
-
+		// default 0
+		this(0, 0.0);
 	}
         // required constructor that accepts specified data field values
 	public Account(int newId, double startingBal) { 
