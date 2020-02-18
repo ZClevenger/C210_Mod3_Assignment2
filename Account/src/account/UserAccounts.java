@@ -44,6 +44,8 @@ public class UserAccounts {
 			System.out.println("Please enter an existing account id: ");
 			userInputId = input.nextInt();			
 		}
+		int choice;
+		do {
 		// Create scanner for menu options
 		Scanner menuChoice = new Scanner(System.in);
 		System.out.println("Main menu");
@@ -51,8 +53,7 @@ public class UserAccounts {
 		System.out.println("2: withdraw");
 		System.out.println("3: deposit");
 		System.out.println("4: exit");
-		int choice;
-		do {
+		
 			choice = menuChoice.nextInt();
 		
 		switch (choice) {
@@ -80,11 +81,7 @@ public class UserAccounts {
 				break;
 		case 4: startOver = true;
 		}
-				System.out.println("Main menu");
-				System.out.println("1: check balance");
-				System.out.println("2: withdraw");
-				System.out.println("3: deposit");
-				System.out.println("4: exit");
+
 
 			} while(choice != 4);
 		
