@@ -20,7 +20,16 @@ import java.text.*;
 			// method named getMonthlyInterest() that returns the monthly interest
 			// method named withdraw that subtracts a specified amount from the balance
 			// method named deposit that adds a specified amount to the balance
+
+
+public class Account {
+   
+	// created this final variable so that the initial date is finalized
+	//private Date today = new Date(); don't need -- use datecreated as below
+	// required data field, default is 0
+
 // required data field, default is 0
+
 	private int id; 
 	// required data field, default is 0
 	private double balance; 
@@ -30,6 +39,7 @@ import java.text.*;
 	private Date dateCreated = new Date(); 
 
         
+
         
         // required no-args constructor 
 	public Account() { 
@@ -37,6 +47,7 @@ import java.text.*;
 	}
         // required constructor that accepts specified data field values
 	public Account(int newId, double startingBal) { 
+
 		this.id = newId;
 		this.balance = startingBal;
 		
